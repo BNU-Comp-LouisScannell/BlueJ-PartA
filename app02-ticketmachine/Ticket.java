@@ -1,33 +1,33 @@
 
 /**
- * Write a description of class Ticket here.
+ * Ticket Class
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Louis Scannell
+ * @version 12/10/2020
  */
 public class Ticket
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // instance variables
+    private String destination;
+    private int cost;
+    private String dateandtime;
 
     /**
      * Constructor for objects of class Ticket
      */
     public Ticket()
     {
-        // initialise instance variables
-        x = 0;
+        this.destination = destination;
+        this.cost = cost;
+        this.dateandtime = dateandtime;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Print ticket
      */
-    public int sampleMethod(int y)
+    public void print()
     {
-        // put your code here
-        return x + y;
+        System.out.println("Ticket + destination" + "Price:" + cost + dateandtime);
+        
     }
 }

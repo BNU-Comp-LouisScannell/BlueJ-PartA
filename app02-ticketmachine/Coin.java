@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Coin here.
+ * A selection of different coins.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Louis Scannell
+ * @version 12/10/2020
  */
 public class Coin
 {
