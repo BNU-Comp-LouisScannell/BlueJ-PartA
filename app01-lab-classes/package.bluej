@@ -2,7 +2,7 @@
 dependency1.from=LabClass
 dependency1.to=Student
 dependency1.type=UsesDependency
-editor.fx.0.height=811
+editor.fx.0.height=808
 editor.fx.0.width=1020
 editor.fx.0.x=420
 editor.fx.0.y=23

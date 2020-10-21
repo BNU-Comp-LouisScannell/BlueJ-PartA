@@ -1,0 +1,28 @@
+Ticket ticketWycombe = new Ticket("wycombe", 330, "13/10/2020");
+TicketMachine ticketMa1 = new TicketMachine(330);
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+# 0 cents.
+##################
+
+Ticket ticket1 = new Ticket("Aylesbury", 220, "13/10/2020");
+Ticket ticketAylesbury = new Ticket("Aylesbury", 220, "13/10/2020");
+Ticket ticketAmersham = new Ticket("Amersham", 300, "13/10/2020");
+Ticket ticketWycombe = new Ticket("High Wycombe", 330, "13/10/2020");
+ticketAylesbury.print();
+Ticket + destinationPrice:0null
+ticketAmersham.print();
+Ticket + destinationPrice:0null
+ticketWycombe.print();
+Ticket + destinationPrice:0null
+TicketMachine ticketMa1 = new TicketMachine(330);
+ticketMa1.insertMoney(330);
+ticketMa1.insertMoney(350);
+ticketMa1.getBalance()
+    returned int 680
+ticketMa1.getPrice()
+    returned int 0
+ticketMa1.refundBalance()
+    returned int 680

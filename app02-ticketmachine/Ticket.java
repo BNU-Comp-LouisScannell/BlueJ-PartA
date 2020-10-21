@@ -9,17 +9,17 @@ public class Ticket
 {
     // instance variables
     private String destination;
-    private int cost;
+    private int price;
     private String dateandtime;
 
     /**
      * Constructor for objects of class Ticket
      */
-    public Ticket()
+    public Ticket(String destination, int price, String dateandtime)
     {
-        this.destination = destination;
-        this.cost = cost;
-        this.dateandtime = dateandtime;
+        destination = destination;
+        price = price;
+        dateandtime = dateandtime;
     }
 
     /**
@@ -27,7 +27,7 @@ public class Ticket
      */
     public void print()
     {
-        System.out.println("Ticket + destination" + "Price:" + cost + dateandtime);
+        System.out.println("Ticket + destination" + "Price:" + price + dateandtime);
         
     }
 }
