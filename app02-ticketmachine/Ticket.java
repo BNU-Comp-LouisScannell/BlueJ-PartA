@@ -1,4 +1,4 @@
-
+import java.util.Date;
 /**
  * Ticket Class
  *
@@ -10,24 +10,17 @@ public class Ticket
     // instance variables
     private String destination;
     private int price;
-    private String dateandtime;
+    private Date issueDate;
 
     /**
      * Constructor for objects of class Ticket
      */
-    public Ticket(String destination, int price, String dateandtime)
+    public Ticket(String destination, int price)
     {
-        destination = destination;
-        price = price;
-        dateandtime = dateandtime;
+        this.destination = destination;
+        this.price = price;
+        issueDate = new Date ();
     }
 
-    /**
-     * Print ticket
-     */
-    public void print()
-    {
-        System.out.println("Ticket + destination" + "Price:" + price + dateandtime);
-        
-    }
+    
 }
