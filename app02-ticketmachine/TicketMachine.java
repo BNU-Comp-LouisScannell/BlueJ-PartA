@@ -20,6 +20,8 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    // Allows enum coin class to be used for coin values
+    public Coin2 coin;
     
     private Ticket issuedTicket;
     //Ticket constants
@@ -71,6 +73,23 @@ public class TicketMachine
                                amount);
         }
     }
+    
+    //Allows the user of the machine to choose Wycombe as a ticket
+    public void chooseHighWycombe()
+    {
+        issuedTicket = HIGHWYCOMBE_TICKET;
+    }
+    //Allows the user of the machine to choose Amersham as a ticket
+    public void chooseAmersham()
+    {
+        issuedTicket = AMERSHAM_TICKET;
+    }
+    //Allows the user of the machine to choose Aylesbury as a ticket
+    public void chooseAylesbury()
+    {
+        issuedTicket = AYLESBURY_TICKET;
+    }
+
 
     /**
      * Print a ticket if enough money has been inserted, and
