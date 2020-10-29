@@ -22,5 +22,8 @@ public class Ticket
         issueDate = new Date ();
     }
 
-    
+    public int getPrice()
+    {
+        return price;
+    }
 }

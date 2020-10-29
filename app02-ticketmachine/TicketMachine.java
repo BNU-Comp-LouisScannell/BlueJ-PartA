@@ -14,8 +14,7 @@
  */
 public class TicketMachine
 {
-    // The price of a ticket from this machine.
-    private int price;
+
     // The amount of money entered by a customer so far.
     private int balance;
     // The total amount of money collected by this machine.
@@ -34,10 +33,8 @@ public class TicketMachine
      */
     public TicketMachine(int price)
     {
-        price = price;
         balance = 0;
         total = 0;
-        
     }
 
     /**
@@ -45,7 +42,7 @@ public class TicketMachine
      */
     public int getPrice()
     {
-        return price;
+        return issuedTicket.getPrice();
     }
 
     /**
@@ -61,16 +58,10 @@ public class TicketMachine
      * Receive an amount of money from a customer.
      * Check that the amount is sensible.
      */
-    public void insertMoney(int amount)
+    public void insertMoney(Coin2 coin)
     {
-        if(amount > 0) 
         {
-            balance = balance + amount;
-        }
-        else 
-        {
-            System.out.println("Use a positive amount rather than: " +
-                               amount);
+            balance = balance + coin.getValue();
         }
     }
     
@@ -98,25 +89,24 @@ public class TicketMachine
      */
     public void printTicket()
     {
-        if(balance >= price) 
+        if(balance >= issuedTicket.getPrice()) 
         {
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
             System.out.println("# Ticket");
-            System.out.println("# " + price + " cents.");
+            System.out.println("# " + issuedTicket.getPrice() + " cents.");
             System.out.println("##################");
             System.out.println();
 
-            // Update the total collected with the price.
-            total = total + price;
+
             // Reduce the balance by the price.
-            balance = balance - price;
+            balance = balance - issuedTicket.getPrice();
         }
         else 
         {
             System.out.println("You must insert at least: " +
-                               (price - balance) + " more cents.");
+                               (issuedTicket.getPrice()- balance) + " more cents.");
                     
         }
     }
