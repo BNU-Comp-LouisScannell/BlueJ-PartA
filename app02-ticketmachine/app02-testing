@@ -1,0 +1,64 @@
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.chooseHighWycombe();
+ticketMa1.getPrice()
+    returned int 330
+ticketMa1.insertMoney(Coin2.P200);
+ticketMa1.insertMoney(Coin2.P100);
+ticketMa1.insertMoney(Coin2.P10);
+ticketMa1.getBalance()
+    returned int 310
+ticketMa1.insertMoney(Coin2.P20);
+ticketMa1.getBalance()
+    returned int 330
+ticketMa1.printTicket();
+
+Sun Nov 01 16:04:56 GMT 2020
+High Wycombe
+330
+ticketMa1.getBalance()
+    returned int 0
+ticketMa1.chooseAylesbury();
+ticketMa1.insertMoney(Coin2.P200);
+ticketMa1.getPrice()
+    returned int 220
+ticketMa1.getBalance()
+    returned int 200
+ticketMa1.insertMoney(Coin2.P20);
+ticketMa1.getBalance()
+    returned int 220
+ticketMa1.printTicket();
+
+Sun Nov 01 16:04:56 GMT 2020
+Aylesbury
+220
+ticketMa1.chooseAmersham();
+ticketMa1.insertMoney(Coin2.P200);
+ticketMa1.insertMoney(Coin2.P100);
+ticketMa1.getBalance()
+    returned int 300
+ticketMa1.printTicket();
+
+Sun Nov 01 16:04:56 GMT 2020
+Amersham
+300
+ticketMa1.chooseHighWycombe();
+ticketMa1.insertMoney(Coin2.P100);
+ticketMa1.printTicket();
+You must insert at least: 230 more cents.
+ticketMa1.getBalance()
+    returned int 100
+ticketMa1.insertMoney(Coin2.P200);
+ticketMa1.insertMoney(Coin2.P200);
+ticketMa1.getBalance()
+    returned int 500
+ticketMa1.printTicket();
+
+Sun Nov 01 16:04:56 GMT 2020
+High Wycombe
+330
+ticketMa1.getBalance()
+    returned int 170
+ticketMa1.refundBalance()
+    returned int 170
+ticketMa1.getBalance()
+    returned int 0
