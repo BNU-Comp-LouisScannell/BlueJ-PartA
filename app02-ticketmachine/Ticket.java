@@ -26,4 +26,11 @@ public class Ticket
     {
         return price;
     }
+    //print method to be used in ticket machine
+    public void printTicket()
+    {
+        System.out.println(issueDate);
+        System.out.println(destination);
+        System.out.println(price);
+    }
 }
