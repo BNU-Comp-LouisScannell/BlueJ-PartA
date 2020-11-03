@@ -12,5 +12,9 @@ public class Course
 
 
 
-
+    public Course (String courseName, String codeNumber)
+    {
+        this.courseName = courseName;
+        this.codeNumber = codeNumber;
+    }
 }
