@@ -93,4 +93,9 @@ public class Course
         
         return Grades.X;
     }
+    
+    public void calcFinalMark()
+    {
+        
+    }
 }
