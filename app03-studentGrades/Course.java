@@ -29,7 +29,9 @@ public class Course
         // initialise instance variables
         this.courseName = courseName;
         this.codeNumber = codeNumber;
-        
+    }
+    public void createModules()
+    {
         module1 = new Module("Programming Concepts", "CO452");
         module2 = new Module("Computer Architecture", "CO450");
         module3 = new Module("Web Development", "CO456");
