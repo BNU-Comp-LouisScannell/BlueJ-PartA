@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Module here.
+ * The class for the modules
  *
  * @author (Louis Scannell)
- * @version (03/11/2020)
+ * @version (06/11/2020)
  */
 public class Module
 {
@@ -35,10 +35,22 @@ public class Module
         }
     }
     
+    //prints module details
     public void print()
     {
         System.out.println("Module: " + codeNo +
             " " + title + " Mark = " + mark);
+    }
+    
+    //gets the mark
+    public int getMark()
+    {
+        return mark;
+    }
+    
+    public String getCodeNo()
+    {
+        return codeNo;
     }
 
 }

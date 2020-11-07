@@ -94,8 +94,19 @@ public class Course
         return Grades.X;
     }
     
+    //add all module mark then divide by 4 to get final grade
     public void calcFinalMark()
     {
+        int sumMark = module1.getMark() + module2.getMark() + 
+        module3.getMark() + module4.getMark();
         
+        finalMark = sumMark / 4;
+        
+    }
+     
+    //prints the final grade
+    public void printFinalGrade()
+    {
+        System.out.println("Final Grade:" + convertToGrade(finalMark));
     }
 }

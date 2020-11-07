@@ -7,7 +7,7 @@ import java.util.*;
  * @author Michael Kölling and David Barnes
  * @version 2016.02.29
  * modified by Louis Scannell
- * 03/11/2020
+ * 06/11/2020
  */
 public class Student
 {
@@ -89,9 +89,8 @@ public class Student
         System.out.println(name + ", student ID: " + id + ", credits: " + credits + ",course: " + course);
     }
     
-        /**
-     * Add a course to the student.
-     */
+    
+     //Add a course to the student.
     public void addCourse(Course course)
     {
         this.course = course;
