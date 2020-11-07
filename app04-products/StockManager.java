@@ -45,7 +45,7 @@ public class StockManager
         }
         else
         {
-            System.out.println("Error")
+            System.out.println("Error");
         }
     }
     
