@@ -1,0 +1,21 @@
+Student student1 = new Student("Jacob Smith", "123");
+Course course1 = new Course("Cyber Security", "CS1");
+student1.addCourse(course1);
+course1.createModules();
+course1.addMark(60, 1);
+course1.addMark(70, 2);
+course1.addMark(80, 3);
+course1.addMark(80, 4);
+course1.printModuleInfo(1);
+Module: CO452 Programming Concepts Mark = 60
+course1.printModuleInfo(2);
+Module: CO450 Computer Architecture Mark = 70
+course1.printModuleInfo(3);
+Module: CO456 Web Development Mark = 80
+course1.printModuleInfo(4);
+Module: CO454 Digital Technologies And Professional Practice Mark = 80
+course1.printCourseDetails();
+Course: Cyber Security Course Number: CS1
+course1.calcFinalMark();
+course1.printFinalGrade();
+Final Grade:A
