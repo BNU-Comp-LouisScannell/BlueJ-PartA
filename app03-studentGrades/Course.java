@@ -65,9 +65,33 @@ public class Course
     /**
      * Prints out the details of a course
      */
-    public void print()
+    public void printCourseDetails()
     {
         System.out.println("Course: " + courseName + " Course Number: " + codeNumber);
+    }
+    
+    public void printModuleInfo(int moduleNo)
+    {
+        if(moduleNo == 1)
+        {
+            module1.print();
+        }
+        else if (moduleNo == 2)
+        {
+            module2.print();
+        }
+        else if (moduleNo == 3)
+        {
+            module3.print();
+        }
+        else if (moduleNo == 4)
+        {
+            module4.print();
+        }
+        else
+        {
+            System.out.println ("Please choose a valid module number");
+        }    
     }
     
     public Grades convertToGrade(int mark)
