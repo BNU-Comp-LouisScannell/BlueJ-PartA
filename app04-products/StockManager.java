@@ -29,6 +29,18 @@ public class StockManager
         stock.add(item);
     }
     
+    //sell an item
+    public void sellProduct(int id, int quantity)
+    {
+        Product product = findProduct(id);
+        
+        if (product !=null)
+        {
+            printProduct(id);
+            
+        }
+    }
+    
     /**
      * Receive a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
