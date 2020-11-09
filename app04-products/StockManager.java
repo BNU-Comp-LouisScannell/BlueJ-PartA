@@ -113,7 +113,7 @@ public class StockManager
     public void printAllProducts()
     {
         System.out.println();
-        System.out.println("Peacock's Stock List");
+        System.out.println("Stock List");
         System.out.println("====================");
         System.out.println();
         
@@ -123,5 +123,15 @@ public class StockManager
         }
 
         System.out.println();
+    }
+    
+    //remove a product
+    public void removeProduct(int id)
+    {
+        Product product = findProduct(id);
+        if(product != null)
+        {
+            stock.remove(product);
+        }
     }
 }

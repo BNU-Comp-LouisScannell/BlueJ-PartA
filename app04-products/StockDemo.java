@@ -22,6 +22,7 @@ public class StockDemo
         manager.addProduct(new Product(101, "Samsung Galaxy S20"));
         manager.addProduct(new Product(102, "Apple iPhone 12"));
         manager.addProduct(new Product(103, "Google Pixel 4A"));
+        manager.addProduct(new Product(109, "Apple AirPods"));
     }
     
     /**
@@ -35,16 +36,18 @@ public class StockDemo
         manager.printProduct(101);
         manager.printProduct(102);
         manager.printProduct(103);
+        manager.printProduct(109);
         
         // Take delivery of 5 items of one of the products.
         manager.delivery(101, 5);
         manager.delivery(102, 5);
         manager.delivery(103, 5);
-        
+        manager.delivery(109, 5);
         // Show the list of all products after delivery
         manager.printProduct(101);
         manager.printProduct(102);
         manager.printProduct(103);
+        manager.printProduct(109);
     }
     
     /**
@@ -79,5 +82,10 @@ public class StockDemo
                                " is not recognised.");
         }
         return product;
+    }
+    //remove product 109
+    public void demoRemove()
+    {
+        manager.removeProduct(109);
     }
 }
