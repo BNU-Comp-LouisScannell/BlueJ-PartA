@@ -22,6 +22,11 @@ public class StockDemo
         manager.addProduct(new Product(101, "Samsung Galaxy S20"));
         manager.addProduct(new Product(102, "Apple iPhone 12"));
         manager.addProduct(new Product(103, "Google Pixel 4A"));
+        manager.addProduct(new Product(104, "Macbook Pro 13"));
+        manager.addProduct(new Product(105, "Macbook Pro 16"));
+        manager.addProduct(new Product(106, "Macbook Air"));
+        manager.addProduct(new Product(107, "Ipad"));
+        manager.addProduct(new Product(108, "32 Inch TV"));
         manager.addProduct(new Product(109, "Apple AirPods"));
     }
     
@@ -36,17 +41,32 @@ public class StockDemo
         manager.printProduct(101);
         manager.printProduct(102);
         manager.printProduct(103);
+        manager.printProduct(104);
+        manager.printProduct(105);
+        manager.printProduct(106);
+        manager.printProduct(107);
+        manager.printProduct(108);
         manager.printProduct(109);
         
-        // Take delivery of 5 items of one of the products.
+        // Take delivery of 5 items of all the products.
         manager.delivery(101, 5);
         manager.delivery(102, 5);
         manager.delivery(103, 5);
+        manager.delivery(104, 5);
+        manager.delivery(105, 5);
+        manager.delivery(106, 5);
+        manager.delivery(107, 5);
+        manager.delivery(108, 5);
         manager.delivery(109, 5);
         // Show the list of all products after delivery
         manager.printProduct(101);
         manager.printProduct(102);
         manager.printProduct(103);
+        manager.printProduct(104);
+        manager.printProduct(105);
+        manager.printProduct(106);
+        manager.printProduct(107);
+        manager.printProduct(108);
         manager.printProduct(109);
     }
     
@@ -60,7 +80,7 @@ public class StockDemo
        int amount = 0;
        for(int id = 101; id <=109; id++)
        {
-           amount++;
+           amount = 2;
            manager.sellProduct(id, amount);
        }
         
@@ -87,5 +107,10 @@ public class StockDemo
     public void demoRemove()
     {
         manager.removeProduct(109);
+    }
+    //print all products
+    public void printProducts()
+    {
+        manager.printAllProducts();
     }
 }

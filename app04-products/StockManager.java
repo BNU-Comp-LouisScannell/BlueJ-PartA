@@ -112,17 +112,13 @@ public class StockManager
      */
     public void printAllProducts()
     {
-        System.out.println();
-        System.out.println("Stock List");
-        System.out.println("====================");
-        System.out.println();
-        
+        System.out.println("Stock List: ");
+        System.out.println("===========");        
         for(Product product : stock)
         {
             System.out.println(product);
         }
 
-        System.out.println();
     }
     
     //remove a product
@@ -132,6 +128,17 @@ public class StockManager
         if(product != null)
         {
             stock.remove(product);
+        }
+    }
+    //print a list of products which are low in stock
+    public void printLowStockLevels()
+    {
+        for (Product product : stock)
+        {
+            if(product.getQuantity() <= 3)
+            {
+                System.out.println(product.toString());
+            }
         }
     }
 }

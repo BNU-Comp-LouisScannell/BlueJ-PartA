@@ -1,0 +1,64 @@
+StockManager stock = new StockManager();
+StockDemo demo = new StockDemo(stock);
+demo.demoDeliverProduct();
+101: Samsung Galaxy S20 stock level: 0
+102: Apple iPhone 12 stock level: 0
+103: Google Pixel 4A stock level: 0
+104: Macbook Pro 13 stock level: 0
+105: Macbook Pro 16 stock level: 0
+106: Macbook Air stock level: 0
+107: Ipad stock level: 0
+108: 32 Inch TV stock level: 0
+109: Apple AirPods stock level: 0
+Product successfully delivered: 101: Samsung Galaxy S20 stock level: 5
+Product successfully delivered: 102: Apple iPhone 12 stock level: 5
+Product successfully delivered: 103: Google Pixel 4A stock level: 5
+Product successfully delivered: 104: Macbook Pro 13 stock level: 5
+Product successfully delivered: 105: Macbook Pro 16 stock level: 5
+Product successfully delivered: 106: Macbook Air stock level: 5
+Product successfully delivered: 107: Ipad stock level: 5
+Product successfully delivered: 108: 32 Inch TV stock level: 5
+Product successfully delivered: 109: Apple AirPods stock level: 5
+101: Samsung Galaxy S20 stock level: 5
+102: Apple iPhone 12 stock level: 5
+103: Google Pixel 4A stock level: 5
+104: Macbook Pro 13 stock level: 5
+105: Macbook Pro 16 stock level: 5
+106: Macbook Air stock level: 5
+107: Ipad stock level: 5
+108: 32 Inch TV stock level: 5
+109: Apple AirPods stock level: 5
+demo.demoSellProduct();
+101: Samsung Galaxy S20 stock level: 5
+Samsung Galaxy S20Quantity:2
+102: Apple iPhone 12 stock level: 5
+Apple iPhone 12Quantity:2
+103: Google Pixel 4A stock level: 5
+Google Pixel 4AQuantity:2
+104: Macbook Pro 13 stock level: 5
+Macbook Pro 13Quantity:2
+105: Macbook Pro 16 stock level: 5
+Macbook Pro 16Quantity:2
+106: Macbook Air stock level: 5
+Macbook AirQuantity:2
+107: Ipad stock level: 5
+IpadQuantity:2
+108: 32 Inch TV stock level: 5
+32 Inch TVQuantity:2
+109: Apple AirPods stock level: 5
+Apple AirPodsQuantity:2
+demo.getProduct(103)
+    returned Object <object reference>
+demo.printProducts();
+Stock List: 
+===========
+101: Samsung Galaxy S20 stock level: 3
+102: Apple iPhone 12 stock level: 3
+103: Google Pixel 4A stock level: 3
+104: Macbook Pro 13 stock level: 3
+105: Macbook Pro 16 stock level: 3
+106: Macbook Air stock level: 3
+107: Ipad stock level: 3
+108: 32 Inch TV stock level: 3
+109: Apple AirPods stock level: 3
+demo.demoRemove();
