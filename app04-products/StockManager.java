@@ -30,14 +30,15 @@ public class StockManager
     }
     
     //sell an item
-    public void sellProduct(int id, int quantity)
+    public void sellProduct(int id, int amount)
     {
         Product product = findProduct(id);
         
         if (product !=null)
         {
             printProduct(id);
-            
+            product.sellQuantity(amount);
+            System.out.println(product.getName() + "Quantity:" + amount);
         }
     }
     
@@ -68,6 +69,13 @@ public class StockManager
      */
     public Product findProduct(int id)
     {
+        for(Product product : stock)
+        {    
+        if (product.getID() == id)
+        {
+            return product;
+        }
+    }
         return null;
     }
     

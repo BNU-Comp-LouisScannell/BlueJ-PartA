@@ -93,4 +93,16 @@ public class Product
                 "Attempt to sell an out of stock item: " + name);
         }
     }
+    //sell  a quantity of a product.
+    public void sellQuantity(int amount)
+    {
+        if(quantity >= amount)
+        {
+            quantity -= amount;
+        }
+        else
+        {
+            System.out.println("Error");
+        }
+    }
 }

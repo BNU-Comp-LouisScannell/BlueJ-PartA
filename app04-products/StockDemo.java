@@ -3,8 +3,8 @@
  * The demonstration becomes properly functional as
  * the StockManager class is completed.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Louis Scannell
+ * @version 08/11/2020
  */
 public class StockDemo
 {
@@ -33,12 +33,18 @@ public class StockDemo
     {
         // Show details of all of the products before delivery.
         manager.printProduct(101);
+        manager.printProduct(102);
+        manager.printProduct(103);
         
         // Take delivery of 5 items of one of the products.
         manager.delivery(101, 5);
+        manager.delivery(102, 5);
+        manager.delivery(103, 5);
         
         // Show the list of all products after delivery
         manager.printProduct(101);
+        manager.printProduct(102);
+        manager.printProduct(103);
     }
     
     /**
@@ -46,18 +52,17 @@ public class StockDemo
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-    public void demoSellProduct(int id)
+    public void demoSellProduct()
     {
-        Product product = getProduct(id);
+       int amount = 0;
+       for(int id = 101; id <=109; id++)
+       {
+           amount++;
+           manager.sellProduct(id, amount);
+       }
         
-        if(product != null) 
-        {
-            manager.printProduct(id);
-            product.sellOne();
-            manager.printProduct(id);
-        }
     }
-    
+       
     /**
      * Get the product with the given id from the manager.
      * An error message is printed if there is no match.
