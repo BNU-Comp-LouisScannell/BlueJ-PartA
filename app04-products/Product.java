@@ -57,7 +57,11 @@ public class Product
     {
         return id + ": " +  name + " stock level: " + quantity;
     }
-
+    //rename a product
+    public void renameProduct(String newName)
+    {
+        this.name = newName;   
+    }    
     /**
      * Restock with the given amount of this product.
      * The current quantity is incremented by the given amount.
